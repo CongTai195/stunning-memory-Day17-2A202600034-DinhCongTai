@@ -27,7 +27,7 @@
   "multi_memory": {
     "relevance_scores": [
       3,
-      3,
+      2,
       5,
       2,
       2,
@@ -37,17 +37,17 @@
       4,
       2,
       5,
-      3,
+      2,
       2,
       3,
       2,
       3,
+      2,
       3,
-      3,
-      3,
-      5
+      4,
+      4
     ],
-    "average_score": 3.1,
+    "average_score": 2.95,
     "memory_hits": {
       "redis": 11,
       "chroma": 0,
@@ -55,10 +55,10 @@
     },
     "token_budget_avg": {
       "system_prompt": 28.0,
-      "retrieved_context": 103.9,
+      "retrieved_context": 113.05,
       "older_messages": 0.0,
       "recent_messages": 11.95,
-      "total": 143.85
+      "total": 153.0
     }
   }
 }
