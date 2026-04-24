@@ -1,0 +1,222 @@
+[
+  {
+    "id": "conv_1",
+    "description": "Basic user profile and fact recall",
+    "turns": [
+      {
+        "user": "Hi, I'm Alice and I work as a software engineer.",
+        "expected_facts": ["Name is Alice", "Works as a software engineer"]
+      },
+      {
+        "user": "I mainly code in Python and Rust.",
+        "expected_facts": ["Codes in Python and Rust"]
+      },
+      {
+        "user": "What did I say my profession was?",
+        "expected_recall": "Software engineer"
+      },
+      {
+        "user": "Can you remember my name and what languages I code in?",
+        "expected_recall": "Alice, Python and Rust"
+      }
+    ]
+  },
+  {
+    "id": "conv_2",
+    "description": "Preferences and episodic recall",
+    "turns": [
+      {
+        "user": "I really love eating sushi, but I'm allergic to shellfish.",
+        "expected_facts": ["Loves sushi", "Allergic to shellfish"]
+      },
+      {
+        "user": "I just watched the movie Inception yesterday.",
+        "expected_facts": ["Watched Inception"]
+      },
+      {
+        "user": "What is a good dinner recommendation for me?",
+        "expected_recall": "Sushi (or something without shellfish)"
+      },
+      {
+        "user": "What movie did we talk about earlier?",
+        "expected_recall": "Inception"
+      }
+    ]
+  },
+  {
+    "id": "conv_3",
+    "description": "Long multi-turn complex fact recall",
+    "turns": [
+      {
+        "user": "My dog's name is Max and he's a Golden Retriever.",
+        "expected_facts": ["Dog named Max", "Golden Retriever"]
+      },
+      {
+        "user": "We go to the park every Sunday.",
+        "expected_facts": ["Goes to park on Sundays"]
+      },
+      {
+        "user": "What day of the week is my dog's favorite?",
+        "expected_recall": "Sunday"
+      },
+      {
+        "user": "What breed is Max?",
+        "expected_recall": "Golden Retriever"
+      }
+    ]
+  },
+  {
+    "id": "conv_4",
+    "description": "Travel and planning",
+    "turns": [
+      {
+        "user": "I am traveling to Tokyo next month.",
+        "expected_facts": ["Traveling to Tokyo next month"]
+      },
+      {
+        "user": "I want to visit the Ghibli Museum.",
+        "expected_facts": ["Wants to visit Ghibli Museum"]
+      },
+      {
+        "user": "Where am I going next month?",
+        "expected_recall": "Tokyo"
+      },
+      {
+        "user": "What specific place did I mention wanting to visit?",
+        "expected_recall": "Ghibli Museum"
+      }
+    ]
+  },
+  {
+    "id": "conv_5",
+    "description": "Hobbies and skill",
+    "turns": [
+      {
+        "user": "I've been playing the guitar for 10 years.",
+        "expected_facts": ["Plays guitar for 10 years"]
+      },
+      {
+        "user": "My favorite genre to play is blues.",
+        "expected_facts": ["Favorite genre is blues"]
+      },
+      {
+        "user": "How long have I been playing my instrument?",
+        "expected_recall": "10 years"
+      },
+      {
+        "user": "What type of music do I like playing?",
+        "expected_recall": "Blues"
+      }
+    ]
+  },
+  {
+    "id": "conv_6",
+    "description": "Dietary restrictions",
+    "turns": [
+      {
+        "user": "I decided to become a vegan last year.",
+        "expected_facts": ["Is vegan"]
+      },
+      {
+        "user": "I also avoid gluten because it makes me feel bad.",
+        "expected_facts": ["Avoids gluten"]
+      },
+      {
+        "user": "Can you suggest a recipe for me?",
+        "expected_recall": "Vegan and gluten-free recipe"
+      },
+      {
+        "user": "Why don't I eat bread?",
+        "expected_recall": "Because it contains gluten"
+      }
+    ]
+  },
+  {
+    "id": "conv_7",
+    "description": "Family info",
+    "turns": [
+      {
+        "user": "I have a sister named Sarah and a brother named John.",
+        "expected_facts": ["Sister Sarah", "Brother John"]
+      },
+      {
+        "user": "Sarah lives in New York.",
+        "expected_facts": ["Sarah lives in New York"]
+      },
+      {
+        "user": "Who are my siblings?",
+        "expected_recall": "Sarah and John"
+      },
+      {
+        "user": "Where does my sister live?",
+        "expected_recall": "New York"
+      }
+    ]
+  },
+  {
+    "id": "conv_8",
+    "description": "Work project",
+    "turns": [
+      {
+        "user": "I'm working on a project called Apollo.",
+        "expected_facts": ["Working on Apollo project"]
+      },
+      {
+        "user": "It's due on Friday.",
+        "expected_facts": ["Project due on Friday"]
+      },
+      {
+        "user": "What's the name of my current project?",
+        "expected_recall": "Apollo"
+      },
+      {
+        "user": "When is my deadline?",
+        "expected_recall": "Friday"
+      }
+    ]
+  },
+  {
+    "id": "conv_9",
+    "description": "Random facts",
+    "turns": [
+      {
+        "user": "My favorite color is green.",
+        "expected_facts": ["Favorite color is green"]
+      },
+      {
+        "user": "I drive a red Honda Civic.",
+        "expected_facts": ["Drives a red Honda Civic"]
+      },
+      {
+        "user": "What color is my car?",
+        "expected_recall": "Red"
+      },
+      {
+        "user": "What is my favorite color?",
+        "expected_recall": "Green"
+      }
+    ]
+  },
+  {
+    "id": "conv_10",
+    "description": "Reading habits",
+    "turns": [
+      {
+        "user": "I am currently reading Dune.",
+        "expected_facts": ["Reading Dune"]
+      },
+      {
+        "user": "I prefer sci-fi over fantasy.",
+        "expected_facts": ["Prefers sci-fi over fantasy"]
+      },
+      {
+        "user": "What book am I reading?",
+        "expected_recall": "Dune"
+      },
+      {
+        "user": "Do I like Lord of the Rings or Star Wars more based on my preference?",
+        "expected_recall": "Star Wars (because sci-fi)"
+      }
+    ]
+  }
+]
